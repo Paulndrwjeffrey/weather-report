@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/c0c16e31ec.js" crossorigin="anonymous"></script>
     <title>Weather Dashboard</title>
 </head>
@@ -14,37 +15,73 @@
     <header>
         <h1>Weather Dashboard</h1>
     </header>
-            <main>
+        <main>
     <aside>
         <div id="searchbox" class="unit">
-            Search for a City:
-            <br>
+            <p>Search for a City:</p>
             <input id="userinput" type="text">
             <button id="searchbtn"><i class="fas fa-frog fa-2x"></i></button>
         </div>
-        <div class="unit">
+        <div id="recentsearch" class="unit">
             <ul id="recents">Recent Searches</ul>
-            <li>New York</li>
-            <li>Boston</li>
-            <li>Olympia</li>
-            <li>Tacoma</li>
+        
+        
         </div>
     </aside>
-            <div id="weather">
-                <div id="forecast" class="unit">
-                    <img id="duck" src="assets/bird.jpeg" alt="bird with hat">
-                </div>
-                    <div id="fiveday" class="unit">
-                        shit shit shit shit
-                        <br>
-                        shit shit shit shit
-                        <br>
-                        shit shit shit shit
-                        <br>
-                        shit shit shit shit
-                    </div>
+        <div id="weather">
+            <div id="forecast" class="unit">
+                <h2 id="citydate">Forecast</h2>
+                <img id="duck" src="assets/bird.jpeg" alt="bird with hat">
+                <p id="temp"></p>
+                <br>
+                <p id="humidity"></p>
+                <br>
+                <p id="windspeed"></p>
+                <br>
+                <p id="UVindex"></p>
+                <br>
             </div>
-            </main>
+
+                <div id="fiveday" class="unit">
+                    <h3>Five Day Forecast</h3>   
+                    
+                    <div class="fivedaycard">
+                        <h4 id="dayonedate"></h4>
+                        <img id="dayoneicon" src="">
+                        <p id="dayonetemp"></p>
+                        <p id="dayonehum"></p>
+                    </div>
+
+                    <div class="fivedaycard">
+                        <h4 id="daytwodate"></h4>
+                        <img id="daytwoicon" src="">
+                        <p id="daytwotemp"></p>
+                        <p id="daytwohum"></p>
+                    </div>
+
+                    <div class="fivedaycard">
+                        <h4 id="daythreedate"></h4>
+                        <img id="daythreeicon" src="">
+                        <p id="daythreetemp"></p>
+                        <p id="daythreehum"></p>
+                    </div>
+
+                    <div class="fivedaycard">
+                        <h4 id="dayfourdate"></h4>
+                        <img id="dayfouricon" src="">
+                        <p id="dayfourtemp"></p>
+                        <p id="dayfourhum"></p>
+                    </div>
+
+                    <div class="fivedaycard">
+                        <h4 id="dayfivedate"></h4>
+                        <img id="dayfiveicon" src="">
+                        <p id="dayfivetemp"></p>
+                        <p id="dayfivehum"></p>
+                    </div>
+
+            </div>
+        </main>
     <script src="assets/script.js"></script>
 </body>
 </html>

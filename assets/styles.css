@@ -30,16 +30,40 @@ h1 {
     color: var(--text-color);
 }
 
+h2 {
+    padding: 15px;
+    font-size: 3.5vw;
+    text-decoration-line: underline;
+}
+
+h3 {
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    font-size: 2.5vw;
+    text-decoration-line: underline;
+}
+
+h4 {
+    padding: 15px;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+p {
+    padding-left: 20px;
+}
+
 i {
     background-color:rgba(226, 226, 226, 0.972)
 }
 
 aside {
-    width: 40%;
+    width: 35%;
 }
 
 input {
-    margin: 5px;
+    margin: 0px 0px 20px 20px;
     font-family: "DM Sans", sans-serif;
     font-style: normal;
     font-size: 2vw;
@@ -48,19 +72,30 @@ input {
 .unit {
     background-color:rgba(226, 226, 226, 0.972);
     font-size: 2vw;
+    border-radius: 25px;
     border-bottom: 2px solid var(--border-color);
     border-right: 2px solid var(--border-color);
 }
 
+#recentsearch {
+    display: none;
+    flex-direction: column;
+}
+
+#weather {
+    display: none;
+}
+
 ul {
     text-decoration-line: underline;
-    margin-left: 5px;
+    margin-left: 20px;
+    padding-top: 5px;
 }
 
 li {
     list-style: none;
     padding-top: 5%;
-    margin: 8px;
+    margin: 0px 0px 10px 22px;
 }
 
 main {
@@ -72,15 +107,44 @@ main {
 }
 
 #duck {
-    display: block;
-    margin: 0px auto 0px auto;
+    float: right;
+    margin-top: -45px;
+    margin-right: 45px;
     border-radius: 25px;
-    border: 1px solid var(--border-color);
-    width: 95%;
-    max-height: 350px;
-    max-width: 350px;
+    border-top: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    max-width: 50px;
+    display: none;
 }
 
 #weather {
-    width: 60%;
+    width: 65%;
+}
+
+#fiveday {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fivedaycard {
+    width: 20%;
+    flex: 1 1 25px;
+    border-radius: 25px;
+    background-color:rgb(255, 255, 255);
+    border-top: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+}
+
+.fivedaycard p {
+    font-size: 1.5vw;
+}
+
+.fivedaycard img {
+    margin: 0px auto 5px auto;
+    display: block;
+    border-radius: 25px;
+    border-top: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    max-width: 50px;
+
 }
