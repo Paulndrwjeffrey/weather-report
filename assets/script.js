@@ -2,7 +2,7 @@ const input = document.getElementById('userinput')
 const searchBtn = document.getElementById('searchbtn')
 const icon = document.getElementById('duck')
 const uvIndex = document.getElementById('UVindex')
-
+const recSearch = document.getElementById('recentsearch')
 var recentSearches = []
 
 function firstThing() {
@@ -32,6 +32,7 @@ function search() {
     var userInput = input.value.trim()
     recentSearches.push(userInput)
     localStorage.setItem('recentSearches', JSON.stringify(recentSearches))
+    createSearchList()
     document.getElementById('weather').style.display = 'unset'
     fetch('https://api.openweathermap.org/data/2.5/weather?q=' + userInput + '&units=imperial&appid=feca628886b7c4f2dff8cb9c14d6efb6')
     .then(response => response.json())
@@ -92,8 +93,7 @@ function search() {
     }) 
 }
 
-
-
 searchBtn.addEventListener('click', search)
+
 
 
