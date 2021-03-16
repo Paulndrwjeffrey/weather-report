@@ -7,8 +7,3 @@ A basic weather application. Recent searches are saved to local storage. UV inde
 
 
 
-
-*Search button sizing is weird.
-*Needs to look better on smaller screen.
-*Recent searches aren't clickable
-*
