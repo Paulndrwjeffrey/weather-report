@@ -55,7 +55,9 @@ p {
 }
 
 i {
-    background-color:rgba(226, 226, 226, 0.972)
+    background-color:rgba(226, 226, 226, 0.972);
+    font-size: 2vw;
+    text-align: center;
 }
 
 aside {
